@@ -622,9 +622,36 @@ color:#fd0a0adb;
   margin: 16px;
 }
 
+.teamcolumn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box
+}
+
+.teamrow {
+margin: 0 -5px;
+}
+
+.teamrow:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+@media screen and (max-width: 600px) {
+  .teamcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
 .teaminfo {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
 }
