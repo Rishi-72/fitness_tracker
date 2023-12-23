@@ -622,36 +622,69 @@ color:#fd0a0adb;
   margin: 16px;
 }
 
-.teamcolumn {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-  box-sizing: border-box
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  height: 30%;
 }
 
-.teamrow {
-margin: 0 -5px;
-}
-
-.teamrow:after {
-  content: "";
-  display: table;
-  clear: both;
-  
-}
-
-@media screen and (max-width: 600px) {
-  .teamcolumn {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-.teaminfo {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+.cardinfo {
+  width: 380px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
-  background-color: #f1f1f1;
-  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #a3e7e1;
+  height: 630px;
 }
+
+.cardinfo img {
+  width: 100%;
+  border-radius: 10%;
+  margin-bottom: 15px;
+  height: 450px;
+}
+
+.cardinfo h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cardinfo p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.teamhead{
+  font-weight: 700;
+  font-size: 60px;
+}
+
+#contact-btn{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+contact-btn:hover, a:hover {
+  opacity: 0.7;
+} 
+
